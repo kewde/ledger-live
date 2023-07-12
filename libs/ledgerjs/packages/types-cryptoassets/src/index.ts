@@ -153,7 +153,8 @@ export type CryptoCurrencyId =
   | "syscoin"
   | "internet_computer"
   | "telos_evm"
-  | "klaytn";
+  | "klaytn"
+  | "polygon_zk_evm";
 
 export type LedgerExplorerId =
   | "btc"

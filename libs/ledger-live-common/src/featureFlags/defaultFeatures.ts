@@ -98,6 +98,9 @@ export const defaultFeatures = {
   currencyTelosEvm: {
     enabled: false,
   },
+  currencyPolygonZkEvm: {
+    enabled: false,
+  },
   currencyKlaytn: {
     enabled: false,
   },
