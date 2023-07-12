@@ -81,6 +81,7 @@ export default function AddAccountsSelectCrypto({ navigation, route }: Props) {
   const telosEvm = useFeature("currencyTelosEvm");
   const polygon_zk_evm = useFeature("currencyPolygonZkEvm");
   const base = useFeature("currencyBase");
+  const base_goerli = useFeature("currencyBaseGoerli");
   const klaytn = useFeature("currencyKlaytn");
 
   const featureFlaggedCurrencies = useMemo(
@@ -114,6 +115,7 @@ export default function AddAccountsSelectCrypto({ navigation, route }: Props) {
       telos: telosEvm,
       polygonZkEvm: polygon_zk_evm,
       base,
+      baseGoerli: base_goerli,
       klaytn,
     }),
     [
@@ -146,6 +148,7 @@ export default function AddAccountsSelectCrypto({ navigation, route }: Props) {
       telosEvm,
       polygon_zk_evm,
       base,
+      base_goerli,
       klaytn,
     ],
   );

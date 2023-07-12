@@ -40,6 +40,7 @@ export type FeatureId =
   | "currencyTelosEvm"
   | "currencyPolygonZkEvm"
   | "currencyBase"
+  | "currencyBaseGoerli"
   | "currencyKlaytn"
   | "ptxSmartRoutingMobile"
   | "mockFeature"
