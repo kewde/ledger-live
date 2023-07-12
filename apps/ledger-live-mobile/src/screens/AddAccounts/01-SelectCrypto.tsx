@@ -79,6 +79,7 @@ export default function AddAccountsSelectCrypto({ navigation, route }: Props) {
   const syscoin = useFeature("currencySyscoin");
   const internetComputer = useFeature("currencyInternetComputer");
   const telosEvm = useFeature("currencyTelosEvm");
+  const klaytn = useFeature("currencyKlaytn");
 
   const featureFlaggedCurrencies = useMemo(
     () => ({
@@ -109,8 +110,17 @@ export default function AddAccountsSelectCrypto({ navigation, route }: Props) {
       syscoin,
       internet_computer: internetComputer,
       telos: telosEvm,
+      klaytn,
     }),
     [
+      axelar,
+      stargaze,
+      umee,
+      desmos,
+      secretNetwork,
+      onomy,
+      quicksilver,
+      persistence,
       avaxCChain,
       stacks,
       optimism,
@@ -128,16 +138,9 @@ export default function AddAccountsSelectCrypto({ navigation, route }: Props) {
       moonriver,
       velasEvm,
       syscoin,
-      axelar,
-      stargaze,
-      umee,
-      desmos,
-      secretNetwork,
-      onomy,
-      persistence,
-      quicksilver,
       internetComputer,
       telosEvm,
+      klaytn,
     ],
   );
 
