@@ -1952,7 +1952,8 @@
         }
       },
       "failed": {
-        "title": "Software update failed"
+        "title": "Software update failed",
+        "skipCta": "Skip update"
       },
       "refused": {
         "title": "OS version {{firmwareVersion}} is available",
