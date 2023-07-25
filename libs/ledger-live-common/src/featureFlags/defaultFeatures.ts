@@ -101,6 +101,9 @@ export const defaultFeatures = {
   currencyPolygonZkEvm: {
     enabled: false,
   },
+  currencyPolygonZkEvmTestnet: {
+    enabled: false,
+  },
   currencyBase: {
     enabled: false,
   },

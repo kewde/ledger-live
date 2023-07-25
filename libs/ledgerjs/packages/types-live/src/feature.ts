@@ -39,6 +39,7 @@ export type FeatureId =
   | "currencyInternetComputer"
   | "currencyTelosEvm"
   | "currencyPolygonZkEvm"
+  | "currencyPolygonZkEvmTestnet"
   | "currencyBase"
   | "currencyBaseGoerli"
   | "currencyKlaytn"
