@@ -56,6 +56,7 @@
     "forgetDevice" : "デバイスの削除",
     "help" : "ヘルプ",
     "saveLogs" : "ログを保存",
+    "scrollToTop" : "上部にスクロール",
     "sync" : {
       "ago" : "{{time}}に同期済み"
     },
@@ -1460,11 +1461,11 @@
         "cta" : "次のステップ"
       },
       "recoveryPhrase" : {
-        "title" : "リカバリーフレーズ",
-        "desc" : "リカバリーフレーズは、秘密鍵をバックアップするための、24個の英単語の組み合わせです。",
-        "desc_1" : "Nanoによって唯一無二のリカバリーフレーズが生成されます。Ledger社はお客様のリカバリーフレーズを保存しません。",
+        "title" : "シークレットリカバリーフレーズ",
+        "desc" : "シークレットリカバリーフレーズは、秘密鍵をバックアップする24単語のリストです。",
+        "desc_1" : "Ledger Nanoは、一意のシークレットリカバリーフレーズを生成します。Ledgerにはフレーズは知らされません。",
         "cta" : "次のステップ",
-        "checkboxDesc" : "このリカバリーフレーズを紛失すると、Nanoにアクセスできなくなった場合に、ウォレット内の暗号資産が永久に失われてしまうことを理解しました。"
+        "checkboxDesc" : "他者が私のシークレットリカバリーフレーズを入手した場合、資産が危険にさらされることを理解しています。"
       },
       "recoveryPhraseSetup" : {
         "infoModal" : {
@@ -1788,7 +1789,7 @@
         "title" : "Ledgerユーザーの暗号資産が保管される場所は？",
         "answers" : {
           "correct" : "ブロックチェーン",
-          "wrong" : "Nanoデバイス"
+          "wrong" : "Ledger Nanoについて"
         },
         "modal" : {
           "text" : "あなたの暗号資産は、常にブロックチェーンに保存されています。ハードウェアウォレットに保存されているのは、暗号資産へのアクセスを可能にする秘密鍵だけです。",
@@ -1796,10 +1797,10 @@
         }
       },
       "recoveryPhrase" : {
-        "title" : "リカバリーフレーズを誰かに知られてしまうと...",
+        "title" : "誰かが私のシークレットリカバリーフレーズにアクセスしたら...",
         "answers" : {
-          "correct" : "暗号資産が危険にさらされるため、別の安全な場所に移さなければならない",
-          "wrong" : "Ledgerに確認すれば教えてもらえるので問題ない"
+          "correct" : "資産が危険にさらされ、第三者が私の資産にアクセスする可能性がある",
+          "wrong" : "私がそのフレーズを忘れない限り問題はない"
         },
         "modal" : {
           "text" : "リカバリーフレーズを他人に知られてしまうと、簡単に暗号資産を盗まれてしまいます。\n紛失した場合は、すぐに暗号資産を安全な場所に移さなければなりません。",
@@ -1807,7 +1808,7 @@
         }
       },
       "privateKey" : {
-        "title" : "NanoをLedgerアプリに接続すると、私の秘密鍵は...",
+        "title" : "Ledger NanoをLedger Liveアプリに接続すると、私の秘密鍵は...",
         "answers" : {
           "correct" : "オフライン状態のまま",
           "wrong" : "短時間だけオンライン状態になる"
@@ -1860,7 +1861,7 @@
       },
       "loading" : {
         "title" : "{{deviceName}}とペアリング中...",
-        "subtitle" : "{{productName}}のコードを確認してください"
+        "subtitle" : "必要に応じて、{{productName}}のコードを確認してください"
       },
       "error" : {
         "generic" : {
@@ -1899,7 +1900,7 @@
       },
       "loading" : {
         "title" : "{{deviceName}}とペアリング中",
-        "subtitle" : "{{productName}}のコードを確認してください"
+        "subtitle" : "必要に応じて、{{productName}}のコードを確認してください"
       },
       "error" : {
         "title" : "ペアリング失敗",
@@ -2305,7 +2306,7 @@
       "seeLess" : "サブアカウントの表示を減らす"
     },
     "send" : "送付",
-    "receive" : "受け取る",
+    "receive" : "入金",
     "buy" : "購入",
     "walletconnect" : "WalletConnect",
     "stake" : "ステーキング",
@@ -2319,7 +2320,7 @@
       "descWithBuy" : "<1><0>{{managerAppName}}</0></1> アプリがインストールされていることを確認してから、<3><0>{{currencyTicker}}</0></3>を受け取りまたは購入してください。",
       "descToken" : "<1><0>{{managerAppName}}</0></1>アプリがインストールされていることを確認して、<3><0>{{currencyTicker}}</0></3>と<5><0>{{tokenType}}</0>トークン</5>を受け取りましょう。",
       "buttons" : {
-        "receiveFunds" : "受け取る",
+        "receiveFunds" : "入金",
         "buyCrypto" : "購入"
       },
       "addAccountCta" : "アカウントを追加"
@@ -2808,7 +2809,7 @@
       "title" : "手数料を編集"
     },
     "receive" : {
-      "title" : "受け取る",
+      "title" : "入金",
       "description" : "暗号資産を別のウォレットから受け取る。",
       "titleReadOnly" : "未確認のアドレス",
       "headerTitle" : "暗号資産",
@@ -2824,7 +2825,7 @@
       "addressCopied" : "コピー済み",
       "taprootWarning" : "送付元がtaprootに対応しているか確認してください",
       "selectCrypto" : {
-        "title" : "暗号資産を選択"
+        "title" : "受け取る暗号資産を選択"
       },
       "stepperHeader" : {
         "range" : "ステップ{{currentStep}}/{{totalSteps}}",
@@ -2832,7 +2833,8 @@
       },
       "selectAccount" : {
         "title" : "アカウントを選択",
-        "subtitle" : "{{currencyTicker}}はこの口座に入金されます。"
+        "subtitle" : "{{currencyTicker}}はこの口座に入金されます。",
+        "cta" : "新しいアカウントを作成する"
       },
       "addAccount" : {
         "title" : "ブロックチェーンを検索",
@@ -2886,7 +2888,7 @@
         "desc" : "トランザクションの数が多い場合やインターネット接続が遅い場合、しばらく時間がかかることがあります。"
       },
       "readOnly" : {
-        "title" : "受け取る",
+        "title" : "入金",
         "text" : "注意してください",
         "desc" : "認証されていないアドレスを表示しようとしています。安全のため、デバイス上でアドレスを認証してください。",
         "verify" : "{{accountType}}のアドレスが認証されませんでした。安全のため、デバイス上でアドレスを認証してください。"
@@ -3182,7 +3184,8 @@
           },
           "withdrawalsBlockedError" : {
             "message" : "お客様の引き出しは {{providerName}}によってブロックされています。\n\n詳細については、サポートにお問い合わせください。"
-          }
+          },
+          "noProviders" : "結果が見つかりません。現在の設定で利用できる見積もりはありません。"
         }
       }
     },
@@ -4140,6 +4143,10 @@
         "restoreLockScreenPicture" : "ロック画面の画像を復元",
         "restoreLanguage" : "言語を復元",
         "installingApps" : "アプリをインストール",
+        "imageLoadRequested" : "{{deviceName}}でロック画面の画像の復元を許可する",
+        "imageCommitRequested" : "{{deviceName}}の画像を確定する",
+        "allowLanguageInstallation" : "{{deviceName}}で言語の復元を許可する",
+        "allowAppsRestoration" : "{{deviceName}}でアプリの復元を許可する",
         "errors" : {
           "description" : "それが間違いであった場合は、復元を再試行できます。または、この手順をスキップすることもできます。",
           "LanguageInstallRefusedOnDevice" : "{{deviceName}}で言語の変更がキャンセルされました",
@@ -4160,6 +4167,10 @@
       "TimeoutError" : {
         "title" : "アップデートタイムアウト",
         "description" : "{{deviceName}}への接続が失われたため、アップデートを完了できませんでした"
+      },
+      "CantOpenDevice" : {
+        "title" : "接続に失敗しました",
+        "description" : "{{deviceName}}への接続が失われたため、アップデートを完了できませんでした。"
       }
     }
   },
@@ -6255,7 +6266,7 @@
           "body" : "安全に別の暗号資産へ交換"
         },
         "receive" : {
-          "title" : "受け取る",
+          "title" : "入金",
           "body" : "ウォレットで暗号資産を受け取る"
         }
       }
