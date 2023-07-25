@@ -272,6 +272,7 @@ export enum SettingsActionTypes {
   SET_HAS_BEEN_UPSOLD_PROTECT = "SET_HAS_BEEN_UPSOLD_PROTECT",
   SET_GENERAL_TERMS_VERSION_ACCEPTED = "SET_GENERAL_TERMS_VERSION_ACCEPTED",
   SET_ONBOARDING_TYPE = "SET_ONBOARDING_TYPE",
+  SET_USER_NPS = "SET_USER_NPS",
 }
 
 export type SettingsImportPayload = Partial<SettingsState>;
@@ -370,6 +371,7 @@ export type SettingsSetHasBeenUpsoldProtectPayload = SettingsState["hasBeenUpsol
 
 export type SettingsCompleteOnboardingPayload = void | SettingsState["hasCompletedOnboarding"];
 export type SettingsSetGeneralTermsVersionAccepted = SettingsState["generalTermsVersionAccepted"];
+export type SettingsSetUserNps = number;
 
 export type SettingsPayload =
   | SettingsImportPayload
@@ -423,7 +425,8 @@ export type SettingsPayload =
   | SettingsSetDebugAppLevelDrawerOpenedPayload
   | SettingsSetGeneralTermsVersionAccepted
   | SettingsSetHasBeenUpsoldProtectPayload
-  | SettingsSetOnboardingTypePayload;
+  | SettingsSetOnboardingTypePayload
+  | SettingsSetUserNps;
 
 // === WALLET CONNECT ACTIONS ===
 export enum WalletConnectActionTypes {

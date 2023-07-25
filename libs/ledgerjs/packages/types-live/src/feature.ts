@@ -6,6 +6,7 @@ export type FeatureId =
   | "llmNewDeviceSelection"
   | "llmNewFirmwareUpdateUx"
   | "ratingsPrompt"
+  | "npsRatingsPrompt"
   | "counterValue"
   | "deviceInitialApps"
   | "buyDeviceFromLive"
@@ -76,8 +77,8 @@ export type FeatureId =
   | "protectServicesDiscoverDesktop"
   | "protectServicesDesktop"
   | "transactionsAlerts"
-  | "listAppsV2"
-  | "editEthTx";
+  | "editEthTx"
+  | "listAppsV2";
 
 /**  We use objects instead of direct booleans for potential future improvements
 like feature versioning etc */

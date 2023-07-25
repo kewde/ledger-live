@@ -64,6 +64,7 @@ import {
   SettingsSetGeneralTermsVersionAccepted,
   SettingsSetOnboardingTypePayload,
   SettingsSetKnownDeviceModelIdsPayload,
+  SettingsSetUserNps,
 } from "./types";
 import { ImageType } from "../components/CustomImage/types";
 
@@ -269,6 +270,8 @@ export const setHasBeenUpsoldProtect = createAction<SettingsSetHasBeenUpsoldProt
 export const setGeneralTermsVersionAccepted = createAction<SettingsSetGeneralTermsVersionAccepted>(
   SettingsActionTypes.SET_GENERAL_TERMS_VERSION_ACCEPTED,
 );
+
+export const setUserNps = createAction<SettingsSetUserNps>(SettingsActionTypes.SET_USER_NPS);
 
 type PortfolioRangeOption = {
   key: PortfolioRange;

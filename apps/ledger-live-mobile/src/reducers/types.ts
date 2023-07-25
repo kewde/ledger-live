@@ -237,6 +237,7 @@ export type SettingsState = {
   dateFormat: string;
   hasBeenUpsoldProtect: boolean;
   generalTermsVersionAccepted?: string;
+  userNps: number | null;
 };
 
 export type NotificationsSettings = {

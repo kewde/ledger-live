@@ -76,6 +76,7 @@ import type {
   SettingsSetOnboardingHasDevicePayload,
   SettingsSetOnboardingTypePayload,
   SettingsSetKnownDeviceModelIdsPayload,
+  SettingsSetUserNps,
 } from "../actions/types";
 import {
   SettingsActionTypes,
@@ -178,6 +179,7 @@ export const INITIAL_STATE: SettingsState = {
   dateFormat: "default",
   hasBeenUpsoldProtect: false,
   onboardingType: null,
+  userNps: null,
 };
 
 const pairHash = (from: { ticker: string }, to: { ticker: string }) =>
@@ -626,6 +628,10 @@ const handlers: ReducerMap<SettingsState, SettingsPayload> = {
     ...state,
     generalTermsVersionAccepted: (action as Action<SettingsSetGeneralTermsVersionAccepted>).payload,
   }),
+  [SettingsActionTypes.SET_USER_NPS]: (state, action) => ({
+    ...state,
+    userNps: (action as Action<SettingsSetUserNps>).payload,
+  }),
 };
 
 export default handleActions<SettingsState, SettingsPayload>(handlers, INITIAL_STATE);
@@ -810,3 +816,4 @@ export const debugAppLevelDrawerOpenedSelector = (state: State) =>
 export const hasBeenUpsoldProtectSelector = (state: State) => state.settings.hasBeenUpsoldProtect;
 export const generalTermsVersionAcceptedSelector = (state: State) =>
   state.settings.generalTermsVersionAccepted;
+export const userNpsSelector = (state: State) => state.settings.userNps;
