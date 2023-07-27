@@ -17,6 +17,7 @@
     "sortBy" : "排序方式",
     "signOut" : "注销",
     "search" : "搜索",
+    "searchProvider" : "搜索提供商...",
     "contactUs" : "联系 Ledger 客服",
     "device" : "设备",
     "cryptoAsset" : "加密资产",
@@ -324,6 +325,10 @@
       "title" : "Ledger Stax 锁屏已取消",
       "description" : "如果这张图片不合适，您可以使用另一张图片重试。",
       "primaryCTA" : "上传另一张图片"
+    },
+    "ImageDoesNotExistOnDevice" : {
+      "title" : "您的 Ledger Stax 没有可移除的锁屏图片",
+      "description" : "之前移除了自定义锁屏图片。"
     },
     "InvalidAddress" : {
       "title" : "该{{currencyName}} 地址无效"
@@ -691,10 +696,10 @@
       "title" : "Memo 标签太长。最大长度为 {{maxLength}}"
     },
     "SolanaUseAllAmountStakeWarning" : {
-      "title" : "确保您有足够的余额剩余，用作未来的交易费"
+      "title" : "确保您有足够的剩余余额以用作未来的交易费"
     },
     "SolanaTxSimulationFailedWhilePendingOp" : {
-      "title" : "您之前的交易尚未处理。请稍等片刻后检查交易记录，然后重试。"
+      "title" : "Your previous transaction hasn't been processed yet. Please wait a moment then check the transaction history before trying again."
     },
     "SolanaTxConfirmationTimeout" : {
       "title" : "您的交易可能失败了。请稍等片刻后检查交易记录，然后重试。"
@@ -779,7 +784,7 @@
       "title" : "您的账户尚未添加。请再次尝试。"
     },
     "NearNewAccountWarning" : {
-      "title" : "尚未创建接收人账户。 该协议需要 {{formattedNewAccountStorageCost}} 转账才能创建账户。"
+      "title" : "尚未创建接收人账户。该协议需要 {{formattedNewAccountStorageCost}} 转账才能创建账户。"
     },
     "NearNewNamedAccountError" : {
       "title" : "尚未创建接收人账户。需要在 NEAR 钱包中创建账户。"
@@ -1029,7 +1034,7 @@
       "discoverWeb3" : {
         "title" : "探索 Web3",
         "description" : "在您的设备抵达之前，探索关于 web3 的一切！",
-        "cta" : "发现"
+        "cta" : "探索"
       }
     }
   },
@@ -1070,20 +1075,20 @@
   },
   "buyDevice" : {
     "0" : {
-      "title" : "这是您的资产。您要自己拥有。",
-      "desc" : "掌控并解锁您自行管理加密资产的自由。"
+      "title" : "这是您的资产。为您所有。",
+      "desc" : "掌控并解锁自主管理加密资产的自由。"
     },
     "1" : {
       "title" : "访问 DeFi 和 NFT",
-      "desc" : "直接从应用程序安全地与我们信任的 Defi 去中心化金融应用程序交互。"
+      "desc" : "直接在应用程序中与我们信任的去中心化金融应用程序进行安全交互。"
     },
     "2" : {
-      "title" : "您通往 Web3 的钥匙",
-      "desc" : "您可以用您的 Ledger 安全地通过我们的合作伙伴买入、卖出和互换主要的加密货币。"
+      "title" : "通往 Web3 之钥",
+      "desc" : "使用 Ledger，您可以安全无忧地通过我们的提供商买入、卖出和互换主流加密货币。"
     },
     "3" : {
-      "title" : "经核证的安全性",
-      "desc" : "我们的产品是经由国家网络安全机构安全认证的唯一硬件钱包。"
+      "title" : "经认证的安全性",
+      "desc" : "我们的产品是唯一通过国家网络安全机构安全认证的硬件钱包。"
     },
     "title" : "您需要 Ledger 设备",
     "desc" : "为了保障安全，Ledger Live 只能搭配设备使用。您需要有设备才能继续。",
@@ -1130,8 +1135,8 @@
     "desc" : "您的订单正在处理中。\n您将很快收到您的 Ledger。请查收您的电子邮件以确认订单。"
   },
   "discover" : {
-    "title" : "发现",
-    "desc" : "安全地探索 Web3 的世界",
+    "title" : "探索",
+    "desc" : "安全地浏览 Web3 世界",
     "link" : "了解更多",
     "sections" : {
       "learn" : {
@@ -1156,11 +1161,11 @@
       },
       "mint" : {
         "title" : "铸造",
-        "desc" : "从 [ L ] 市场的独家活动中铸造 NFT。"
+        "desc" : "通过 [ L ] 市场的独家活动来铸造 NFT。"
       },
       "referralProgram" : {
         "title" : "推荐好友",
-        "desc" : "如果您的好友购买了 Ledger，您们将分别获得价值 10 美元的比特币。"
+        "desc" : "若您的好友购买一个 Ledger 设备，则双方均可赚取价值 10 美元的比特币。"
       }
     },
     "comingSoon" : "敬请期待",
@@ -1190,7 +1195,7 @@
   "onboarding" : {
     "stepWelcome" : {
       "title" : "欢迎使用 Ledger",
-      "subtitle" : "我们让数字所有权变得既安全又简单",
+      "subtitle" : "我们使数字所有权变得安全简单",
       "start" : "开始",
       "noDevice" : "没有设备？",
       "buy" : "购买一个 {{fullDeviceName}}",
@@ -1209,7 +1214,7 @@
     "postWelcomeStep" : {
       "title" : "我们开始吧",
       "subtitle_yes" : "设置您的 Ledger，或者先看看应用程序。",
-      "subtitle_no" : "您可以选择先看看应用程序，或者购买 Nano X 设备",
+      "subtitle_no" : "您可以先查看应用程序，或者购买 Nano X 设备",
       "noLedgerLink" : "我没有 Ledger 设备，我想买一个。",
       "setupLedger" : {
         "title" : "设置我的 Ledger 设备",
@@ -1221,7 +1226,7 @@
       },
       "discoverLedger" : {
         "title" : "探索 Ledger Live",
-        "subtitle" : "探索应用程序并了解其好处 "
+        "subtitle" : "浏览应用程序并了解其优势 "
       },
       "desktopSync" : {
         "title" : "通过桌面应用程序同步",
@@ -1235,10 +1240,10 @@
         "title" : "保护您的所有加密资产。"
       },
       "1" : {
-        "title" : "时刻留意市场动态。"
+        "title" : "密切关注市场动态。"
       },
       "2" : {
-        "title" : "发现应用程序并了解 web3。"
+        "title" : "探索应用程序并了解 Web3。"
       },
       "3" : {
         "title" : "保护您的加密货币和 NFT。"
@@ -1309,28 +1314,28 @@
       "0" : {
         "label" : "基础知识",
         "title" : "访问您的加密资产",
-        "desc" : "您的加密资产存放在区块链中。您需要使用私钥来访问并管理它们。",
+        "desc" : "您的加密资产存放在区块链中。您需要使用私钥来访问和管理资产。",
         "action" : "尚无 Nano？探索应用程序"
       },
       "1" : {
         "label" : "基础知识",
         "title" : "保管好您的私钥",
-        "desc" : "您的私钥就存放在您的 Nano 中。它必须为您所独有，这样您才能掌控自己的金钱。"
+        "desc" : "私钥存放在 Nano 中。私钥必须为您所独有，以便您全权掌控个人资产。"
       },
       "2" : {
         "label" : "基础知识",
         "title" : "保持离线状态",
-        "desc" : "Ledger Live 在确保您的安全性的同时，允许您买入、卖出、管理、交易并赚取加密货币。您将使用您的 Nano 对每一笔交易进行验证。"
+        "desc" : "Ledger Live 确保您安全地买入、卖出、管理、交易并赚取加密货币。您可以通过 Nano 验证每笔交易。"
       },
       "3" : {
         "label" : "基础知识",
         "title" : "验证交易",
-        "desc" : "您的 Nano 就像是一个“冷存储”钱包。也就是说，它永远不会把您的私钥曝露在线上，即便是在使用我们的应用程序时。"
+        "desc" : "Nano 类似“冷存储”钱包。即便是在使用应用程序时，您的私钥也绝不会被暴露在网上。"
       },
       "4" : {
         "label" : "基础知识",
         "title" : "让我们设置您的 Nano 吧！",
-        "desc" : "首先要设置 Nano 的安全性。"
+        "desc" : "首先设置 Nano 的安全性。"
       },
       "cta" : "动手吧！",
       "title" : "基础知识"
@@ -1521,7 +1526,7 @@
         },
         "warning" : {
           "title" : "游戏开始！",
-          "desc" : "回答 3 个简单问题，消除您对硬币钱包的常见误解。",
+          "desc" : "回答 3 个简单问题，消除您对硬件钱包的常见误解。",
           "cta" : "接受测验"
         }
       }
@@ -1792,8 +1797,8 @@
         }
       },
       "final" : {
-        "successTitle" : "已经是位高手！",
-        "successText" : "您已准备好安全的管理您的加密资产了。只剩下最后一小步！",
+        "successTitle" : "您已成为高手！",
+        "successText" : "您已准备好安全地管理您的加密资产了。只剩下最后一小步！",
         "failTitle" : "距成为高手仅一步之遥……",
         "failText" : "别担心，Ledger 会全程为您的操作提供指导。很快，您就会对自己加密资产的安全性感到格外舒心。只剩下最后一小步！",
         "cta" : "下一步"
@@ -2000,7 +2005,7 @@
     "manager" : "我的 Ledger",
     "settings" : "设置",
     "platform" : "Live 应用程序",
-    "discover" : "发现",
+    "discover" : "探索",
     "nanoX" : "Nano X",
     "market" : "市场",
     "learn" : "学习"
@@ -2037,8 +2042,8 @@
         "title" : "开始",
         "description" : "您可以通过我们的合作伙伴购买加密货币或设置您的钱包"
       },
-      "title" : "首先将您喜欢的资产添加到您的钱包",
-      "subtitle" : "Ledger 支持超过 6,000 种币和代币",
+      "title" : "首先将您喜欢的资产添加至钱包",
+      "subtitle" : "Ledger 支持 6000 多种加密货币和代币",
       "addAccount" : "或添加账户"
     },
     "noOpState" : {
@@ -2277,7 +2282,7 @@
     "receive" : "接收",
     "buy" : "买入",
     "walletconnect" : "WalletConnect",
-    "stake" : "权益质押",
+    "stake" : "质押",
     "sell" : "卖出",
     "swap" : "互换",
     "manage" : "管理",
@@ -2403,7 +2408,7 @@
         "cta" : "重新委托"
       },
       "delegation" : {
-        "description" : "您知道吗？Ledger 验证器只需超低佣金即可为您权益质押 {{asset}}。",
+        "description" : "您知道吗？Ledger 验证者只需超低佣金即可为您权益质押 {{asset}}。",
         "cta" : "立即进行权益质押"
       }
     }
@@ -2493,7 +2498,7 @@
     "header" : "设置",
     "resources" : "Ledger 资源",
     "display" : {
-      "title" : "一般条款",
+      "title" : "常规",
       "desc" : "配置 Ledger Live 常规设置。",
       "carousel" : "推荐",
       "carouselDesc" : "我们会向您显示一些卡片，其中有个性化提示以及您的专属最新优惠。",
@@ -2602,7 +2607,7 @@
       "privacyPolicy" : "隐私政策",
       "privacyPolicyDesc" : "查看我们会收集哪些个人资料以及收集的原因和用途。",
       "liveReview" : {
-        "title" : "反馈",
+        "title" : "Feedback",
         "desc" : "请告诉我们您对应用程序的反馈",
         "ios" : "在 App Store（苹果应用商店）内评论",
         "android" : "在 Google Play（谷歌应用商店）内评论"
@@ -2699,10 +2704,6 @@
         "experimentalListAppsV2" : {
           "title" : "我的 Ledger 的实验性应用程序列表",
           "description" : "我的 Ledger 访问和内部流程的性能改进。"
-        },
-        "experimentalCountervalues" : {
-          "title" : "实验性对价 API",
-          "description" : "这可能会导致您的账户对价显示错误。"
         },
         "experimentalSwap" : {
           "title" : "新的互换界面",
@@ -2988,7 +2989,7 @@
         "balance" : "余额 <0>123</0>",
         "fromAccount" : "选择账户",
         "toAccount" : "选择账户",
-        "paraswapCTA" : "寻找 Paraswap？它已被移动到”发现“选项卡！",
+        "paraswapCTA" : "寻找 ParaSwap？它已被移动到”探索“选项卡！",
         "quote" : "报价",
         "receive" : "接收",
         "amount" : {
@@ -3770,7 +3771,7 @@
       },
       "genuineCheck" : {
         "title" : "在您的 {{productName}} 上开启 Ledger Manager（管理器）",
-        "accept" : "请勿关闭您的 Nano X。确保允许 <1>Ledger Manager</1>（管理器）运行。"
+        "accept" : "请勿将 Nano X 设备关机。确保允许 <1>Ledger Manager</1>（管理器）运行"
       },
       "genuineCheckPending" : {
         "title" : "正在检查该设备是否为正版……"
@@ -3826,9 +3827,9 @@
       "title2" : "验证"
     },
     "GenuineCheck" : {
-      "title" : "设备验证查验",
-      "accept" : "请勿关闭您的 Nano X。确保允许 <1>Ledger Manager</1>（管理器）运行。",
-      "info" : "此步骤旨在确保您的 Nano 是正版的。"
+      "title" : "设备正品检验",
+      "accept" : "请勿将 Nano X 设备关机。确保允许 <1>Ledger Manager</1>（管理器）运行",
+      "info" : "此步骤旨在确保您的 Nano 是正品。"
     },
     "ScanningHeader" : {
       "title" : "正在寻找设备",
@@ -5168,7 +5169,7 @@
       },
       "minBondWarning" : {
         "title" : "绑定量不足",
-        "description" : "您的绑定余额低于当前允许提名的最小值{0}。您的提名有可能被删除。"
+        "description" : "您的已绑定余额低于提名所需的最低额度。您的提名有被移除的风险。"
       }
     },
     "nomination" : {
@@ -5792,7 +5793,7 @@
   },
   "browseWeb3" : {
     "catalog" : {
-      "title" : "浏览 Web3",
+      "title" : "探索",
       "subtitle" : "浏览与 Ledger 完全集成的 Web3",
       "section" : {
         "recentlyUsed" : "最近使用",
@@ -5801,7 +5802,7 @@
       },
       "branch" : {
         "soon" : "敬请期待",
-        "experimental" : "实验性的",
+        "experimental" : "实验性功能",
         "debug" : "除错"
       },
       "banner" : {
@@ -5819,6 +5820,11 @@
       "developerCTA" : {
         "title" : "面向开发者",
         "description" : "您所需要的将您的应用程序整合到 Ledger Live 的全部信息。"
+      },
+      "warnings" : {
+        "notFound" : "未能找到",
+        "retrySearchKeyword" : "请用另一个关键词重新进行搜索。",
+        "retrySearchKeywordAndUrl" : "请使用其他关键字重试搜索或在 Ledger Live 外打开 <Link>{{search}}</Link>。"
       }
     },
     "disclaimer" : {
@@ -5934,13 +5940,10 @@
       "reload" : "重新加载",
       "noCryptosFound" : "未找到币",
       "noCurrencyFound" : "没有找到货币",
-      "noAppFound" : "未找到应用程序",
-      "notFound" : "未能找到",
       "noSearchResultsFor" : "对不起，我们没有找到任何币， <0>{{search}}</0> 。请用另一个关键词重新进行搜索。",
       "noCurrencySearchResultsFor" : "对不起，我们没有为<0>{{search}}</0>找到任何货币。请用另一个关键词重新进行搜索。",
       "noSearchResults" : "对不起，我们没有找到任何搜索结果。",
       "retrySearchKeyword" : "请用另一个关键词重新进行搜索。",
-      "retrySearchKeywordAndUrl" : "请使用其他关键字重试搜索或在 Ledger Live 外打开 <Link>{{search}}</Link>。",
       "retrySearchParams" : "请用其他参数重新进行搜索。",
       "trackFavAssets" : "追踪您最喜爱的",
       "clickOnStarIcon" : "点击资产旁边的星形图标将自动把它们添加到您的收藏夹。",
@@ -6120,8 +6123,8 @@
         "selectAndHide" : "选择并隐藏",
         "hide" : "隐藏 {{count}} 件藏品",
         "hide_plural" : "隐藏 {{count}} 件藏品",
-        "alertHide" : "1 Collection hidden. Go to the Account section in Settings to display and unhide them at any time",
-        "alertHide_plural" : "{{count}} Collections hidden. Go to the Account section in Settings to display and unhide them at any time"
+        "alertHide" : "已隐藏 1 件收藏。随时前往 “设置” 中的 “账户” 部分显示并取消隐藏",
+        "alertHide_plural" : "已隐藏 {{count}} 件收藏。随时前往 “设置” 中的 “账户” 部分显示并取消隐藏"
       },
       "empty" : {
         "title" : "暂时没有 NFT 可显示",
@@ -6174,6 +6177,30 @@
     "title" : "连接设备"
   },
   "stake" : {
+    "ethereum" : {
+      "title" : "增长您的以太币持有量",
+      "subTitle" : "将每日收益直接存入您的 Ledger Live，质押您的以太币并增加您的持仓。",
+      "close" : "关闭",
+      "providers" : {
+        "lido" : {
+          "title" : "使用 Lido 赚取",
+          "description" : "使用 Lido 权益质押您的以太币，每天赚取奖励。无最低以太币数量要求。无锁定期。",
+          "supportLink" : "了解关于 Lido 的更多信息"
+        },
+        "kiln" : {
+          "title" : "Kiln 专属质押",
+          "tag" : "需要 32 枚以太币",
+          "description" : "使用专门的验证者进行权益质押。需要是 32 以太币的倍数。奖励需要手动领取。随时退出。",
+          "supportLink" : "了解关于 Kiln 验证者的更多信息"
+        },
+        "kiln_pooling" : {
+          "title" : "Kiln 质押池",
+          "description" : "加入权益质押池。不要求最低以太币金额。奖励自动按复利计算。随时退出。",
+          "supportLink" : "了解关于 Kiln 池的更多信息",
+          "tag" : "无最低限制"
+        }
+      }
+    },
     "noFundsModal" : {
       "title" : "买入、互换或接收",
       "text" : "您没有足够的 {{coin}} 可供权益质押",
@@ -6186,7 +6213,7 @@
         "swap" : {
           "title" : "互换",
           "label" : "热门",
-          "body" : "安全转换加密货币"
+          "body" : "安全地转换加密货币"
         },
         "receive" : {
           "title" : "接收",
