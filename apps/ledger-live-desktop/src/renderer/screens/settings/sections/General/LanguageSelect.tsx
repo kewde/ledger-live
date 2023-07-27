@@ -2,12 +2,7 @@ import React, { useMemo, useCallback, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useSelector, useDispatch } from "react-redux";
 import { DeviceModelId } from "@ledgerhq/devices";
-import {
-  allLanguages,
-  prodStableLanguages,
-  Locale,
-  localeIdToDeviceLanguage,
-} from "~/config/languages";
+import { prodStableLanguages, Locale, localeIdToDeviceLanguage } from "~/config/languages";
 import useEnv from "~/renderer/hooks/useEnv";
 import { setLanguage } from "~/renderer/actions/settings";
 import {
@@ -63,17 +58,15 @@ const LanguageSelect: React.FC<Props> = ({ disableLanguagePrompt }) => {
     lastSeenDevice?.deviceInfo,
   );
 
-  const debugLanguage = useEnv("EXPERIMENTAL_LANGUAGES");
-
   const languages = useMemo(
     () =>
       [{ value: null as Locale | null, label: t(`language.system`) }].concat(
-        (debugLanguage ? allLanguages : prodStableLanguages).map(key => ({
+        prodStableLanguages.map(key => ({
           value: key,
           label: languageLabels[key],
         })),
       ),
-    [t, debugLanguage],
+    [t],
   );
 
   const currentLanguage = useMemo(
